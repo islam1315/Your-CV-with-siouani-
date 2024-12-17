@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your CV with Siouani</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your CV with Siouani</h1>
+    </header>
+    <main>
+        <form id="cvForm">
+            <!-- تحديد الجنس -->
+            <label for="gender">الجنس:</label>
+            <select id="gender" onchange="updateBackground()">
+                <option value="male">ذكر</option>
+                <option value="female">أنثى</option>
+            </select>
+
+            <!-- اختيار اللغة -->
+            <label for="language">اختر اللغة:</label>
+            <select id="language" onchange="updateLabels()">
+                <option value="ar">العربية</option>
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+
+            <!-- الحقول الشائعة للسيرة الذاتية -->
+            <label id="nameLabel" for="name">الاسم الكامل:</label>
+            <input type="text" id="name" placeholder="أدخل اسمك" required>
+
+            <label id="emailLabel" for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+
+            <label id="phoneLabel" for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" placeholder="أدخل رقم هاتفك">
+
+            <label id="addressLabel" for="address">العنوان:</label>
+            <input type="text" id="address" placeholder="أدخل عنوانك">
+
+            <label id="educationLabel" for="education">التعليم:</label>
+            <textarea id="education" placeholder="أدخل معلومات التعليم"></textarea>
+
+            <label id="experienceLabel" for="experience">الخبرات العملية:</label>
+            <textarea id="experience" placeholder="أدخل خبراتك العملية"></textarea>
+
+            <label id="skillsLabel" for="skills">المهارات:</label>
+            <textarea id="skills" placeholder="أدخل المهارات"></textarea>
+
+            <label id="languagesLabel" for="languages">اللغات:</label>
+            <textarea id="languages" placeholder="أدخل اللغات التي تتقنها"></textarea>
+
+            <label id="projectsLabel" for="projects">المشاريع:</label>
+            <textarea id="projects" placeholder="أدخل تفاصيل المشاريع"></textarea>
+
+            <!-- أزرار توليد وطباعة السيرة الذاتية -->
+            <button type="button" onclick="generateCV()">توليد السيرة الذاتية</button>
+        </form>
+        <section id="cvOutput"></section>
+        <button id="printButton" onclick="printCV()">طباعة السيرة الذاتية</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

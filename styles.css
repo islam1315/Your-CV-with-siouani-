@@ -1,0 +1,109 @@
+/* تنسيقات عامة */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s ease-in-out;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #002040;
+    border-bottom: 2px solid #004080;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, textarea, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+input, textarea, select {
+    border: 1px solid #004080;
+    background: #001020;
+    color: white;
+}
+
+button {
+    background: #004080;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0055b3;
+}
+
+/* تنسيق قسم عرض السيرة الذاتية */
+#cvOutput {
+    background: #002040;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #004080;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: auto;
+}
+
+#cvOutput h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #00aaff;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* الأقسام */
+.cv-section {
+    margin-bottom: 20px;
+}
+
+.cv-section p {
+    margin: 5px 0;
+}
+
+.cv-section strong {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+/* زر الطباعة */
+#printButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #004080;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#printButton:hover {
+    background: #0055b3;
+}
